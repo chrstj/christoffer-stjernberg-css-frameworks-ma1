@@ -1,0 +1,61 @@
+$colours: (
+    light-grey: #E5E5E5,
+    pink: #C32C72,
+    off-white: #F4F3EE,
+);
+
+@function getColour($colour) {
+    @return map-get($colours, $colour);
+}
+
+
+body {
+    background-color: getColour(light-grey);
+
+}
+
+h1 {
+    margin: 50px;
+}
+
+ 
+nav {
+    background-color: getColour(off-white);
+}
+
+.card-columns {
+justify-content: center;
+}
+
+.card1 {
+    background-color: getColour(off-white);
+  }
+  
+  .card2 {
+    background-color: #FFFF;
+    border: 3px solid getColour(pink);
+  }
+  
+  .card3 {
+    background-color: getColour(pink);
+    border:3px solid #FFFF;
+  }
+  
+  .card1, .card2, .card3 {
+    width: 20rem;
+    height: 20rem;
+    margin: 15px;
+    border-radius: 10px;
+  }
+
+footer {
+margin-top: 200px;
+}
+
+@media only screen and (min-width: 1700px) {
+    .card-columns {
+        margin-right: 400px;
+        margin-left: 400px;
+        }
+  }
+  

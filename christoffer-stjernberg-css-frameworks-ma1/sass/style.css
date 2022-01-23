@@ -1,0 +1,50 @@
+body {
+  background-color: #E5E5E5;
+}
+
+h1 {
+  margin: 50px;
+}
+
+nav {
+  background-color: #F4F3EE;
+}
+
+.card-columns {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card1 {
+  background-color: #F4F3EE;
+}
+
+.card2 {
+  background-color: #FFFF;
+  border: 3px solid #C32C72;
+}
+
+.card3 {
+  background-color: #C32C72;
+  border: 3px solid #FFFF;
+}
+
+.card1, .card2, .card3 {
+  width: 20rem;
+  height: 20rem;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 200px;
+}
+
+@media only screen and (min-width: 1700px) {
+  .card-columns {
+    margin-right: 400px;
+    margin-left: 400px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
